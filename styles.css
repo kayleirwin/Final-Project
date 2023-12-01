@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+ form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+--light-blue: #6C87A1ff;
+--drk-teal: #154D56;
+--tan: #D5D1B4;
+--green: #667D15ff;
+--muted-green:#58705B;
+--drk-blue: #334C59ff;
+--light-gray:#B3BCBB;
+--white: #F2F2F2;
+font-family: 'Tangerine' 'Scrivano' 'Aviano Royale Bold' "latienne-pro";
+}
+
+body{
+    width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--muted-green);
+    position: fixed;
+}
+
+
+h1{
+    font-family: 'Tangerine';
+    display: flex;
+    font-size: 4rem;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+h1 a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 a:hover{
+    
+}
+
+
+ul{
+    font-family: 'Scrivano';
+    font-size: 1.3rem;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+li{
+    width: 150px;
+    text-align: center;
+}
+
+li a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--white);
+}
+
+li a:hover{
+    text-decoration-color: var(--drk-teal);
+}
+
+#mountain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#hero-img{
+    background-position: center;
+    background-size: cover;
+    size: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main{
+    background-color: #f2f2f2;
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");   
+    border: 2px solid var(--muted-green);
+    padding-bottom: 30px;
+}
+
+#main-contact{
+    width: 50%;
+    margin: 95px auto;
+    display: flex;
+}
+
+#main-contact img{
+    width: 100%;
+    height: 80%;
+}
+
+#left-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 20px;
+}
+
+#left-contact h2{
+    font-size: 2.3rem;
+}
+
+#left-contact p{
+    font-size: 1.1rem;
+    padding: 10px 0 20px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    font-size: 1.2rem;
+    font-family: 'latienne-pro';
+}
+
+input{
+    height: 30px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+fieldset{
+    display: flex;
+    font-size: 1.2rem;
+}
+
+fieldset input{
+    width: 50%;
+    height: 80%;
+}
+
+fieldset .input{
+    display: block;
+    width: 50%;
+    align-items: center;
+}
+
+.comments{
+    font-size: 1.2rem;
+}
+
+.comments textarea{
+    width: 98%;
+    height: 60px;
+    margin-top: 5px;
+}
+
+#mySubmit{
+    background-color: var(--drk-teal);
+    height: 10%;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family: 'latienne-pro';
+}
+
+#mySubmit:hover{
+    background-color: var(--muted-green);
+}
+
+.required{
+    color: var(--muted-green);
+}
+
+#intro{
+    font-family: 'latienne-pro';
+}
+
+#intro h2{
+    font-family: 'aviano-royale';
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px;
+    font-weight: bold;
+    color: var(--muted-green);
+}
+
+#intro p{
+    width: 50%;
+    margin: -25px auto 75px auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#group{
+    font-family: 'latienne-pro';
+    display: flex;
+    width: 60%;
+    margin: 0 auto 25px auto;
+}
+
+#group h3{
+    font-family: 'Scrivano';
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px;
+    margin: 0 0 25px 0;
+    text-align: center;
+    background-color: var(--muted-green);
+    color: var(--white);
+}
+
+#group img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.image{
+    width: 60%;
+    margin-right: 20px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-right: -20px;
+}
+
+h2{
+    font-family: 'Scrivano';
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--muted-green);
+}
+
+p{
+    font-family: 'latienne-pro';
+}
+
+footer{
+    text-align: center;
+    background-color: var(--muted-green);
+    padding: 10px;
+}
+
+footer p{
+    padding: 7px;
+    color: var(--white);
+}

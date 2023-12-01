@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kayle Irwin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Cabin Escape</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="images/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://use.typekit.net/nwn2ukf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nwn2ukf.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nwn2ukf.css">
+    
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Alpine Cabin Escape</a></h1>
+            <section id="mountain">
+                <img src="images/greenmount.png" alt="mountain" width="200px" height="75px">
+            </section>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accomodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="hero-img">
+            <img src="images/swiss-valley.jpg" alt="swiss-valley">
+        </section>
+        <section id="main-contact">
+            <section id="left-contact">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a <span class="required">*</span></p>
+        
+            <img src="images/swiss-peak.jpg" alt="swiss-peak">
+            </section>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                <div class="input">
+                    <label for="full-name">Full Name<span class="required">*</span></label>
+                    <input type="text" name="full-name" id="full-name" required>
+                </div>
+                
+                <div class="input">
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="input">
+                    <label for="phone-number">Phone Number<span class="required">*</span></label>
+                    <input type="text" name="phone-number" id="phone-number" required>
+                </div>
+                <fieldset>
+                    <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                    <div class="input">      
+                    <input type="radio" name="contact-pref" id="email-pref" value="prefer-email" required checked>
+                    <label for="email-pref">Email</label>
+                    </div>   
+                    <div class="input">    
+                    <input type="radio" name="contact-pref" id="phone-pref" value="prefer-phone">
+                    <label for="phone-pref">Phone</label>
+                    </div>        
+                </fieldset>
+                <div class="comments">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; Alpine Cabin Escape 2023</p>
+        <p> This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
